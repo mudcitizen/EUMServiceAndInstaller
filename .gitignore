@@ -1,0 +1,12 @@
+! *.cs
+! *.sln 
+! *.suo 
+! *.sql 
+! *.xsd 
+! *.config 
+! *.testsettings 
+! *.resx 
+! *.settings
+! .gitignore
+*
+*.* 

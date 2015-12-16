@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PSMS.Host.FileServerConnectionManager.Config.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Get_Host_Dialog_Description" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Where is the Hostplus directory?   Note: This directory must be on a local drive that contain a file named SYEUMREQ.DBF</Value>
+    </Setting>
+    <Setting Name="Invalid_Directory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">This directory does not contain a file named {0}.  Please select another directory.</Value>
+    </Setting>
+    <Setting Name="MessageBox_Title" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sms|Host FileServerConnectionManager installation</Value>
+    </Setting>
+    <Setting Name="Invalid_Drive" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Invalid disk specification.</Value>
+    </Setting>
+    <Setting Name="Wrong_DriveType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The directory must be on a {0} disk drive.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
