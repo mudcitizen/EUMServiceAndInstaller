@@ -11,27 +11,32 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Test
     public class TestConfigurationTextUpdater
     {
 
+        Dictionary<String, String> _Dict;
+
+        [TestInitialize]
+        public void Setup() {
+            const String one = "one";
+            const String two = "two";
+            const String three = "three";
+            _Dict = new Dictionary<String, String>();
+            _Dict.Add(one, one.ToUpper());
+            _Dict.Add(two, two.ToUpper());
+            _Dict.Add(three, three.ToUpper());
+        }
 
         [TestMethod]
         public void TestChange()
         {
-            IConfigurationTextUpdater updater = new ConfigurationTextUpdater();
 
-            IList<String> terms = new List<String>();
-            const String one = "one";
-            const String two = "two";
-            const String three = "three";
-            IDictionary<String, String> dict = new Dictionary<String,String>();
-            dict.Add(one, one.ToUpper());
-            dict.Add(two, two.ToUpper());
-            dict.Add(three, three.ToUpper());
 
             IList<String> configIn = new List<String>();
-            foreach (KeyValuePair<String, String> kvp in dict) {
+            foreach (KeyValuePair<String, String> kvp in _Dict) {
                 configIn.Add(String.Format("{0} - {1}", kvp.Key, kvp.Key));
             }
 
-            IEnumerable<String> configOut = updater.Update(configIn, dict);
+            IConfigurationTextUpdater updater = new ConfigurationTextUpdater();
+            IEnumerable<String> configOut = updater.Update(configIn, _Dict);
+
             Assert.IsFalse(configOut == null);
 
             StringBuilder sb = new StringBuilder();
@@ -49,7 +54,7 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Test
                 int linesWithValueTwice = 0;
 
                 // There should be 1 KVP whose Value occurs twice in the line
-                foreach (KeyValuePair<String, String> kvp in dict) {
+                foreach (KeyValuePair<String, String> kvp in _Dict) {
                     int valueOccurs = 0;
                     // Key should not be there....
                     Assert.IsTrue(lineOut.IndexOf(kvp.Key) < 0);
@@ -72,8 +77,26 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Test
             Debug.WriteLine(s);
 
 
+        }
+
+        [TestMethod]
+        public void TestNoChange()
+        {
+            IList<String> configIn = new List<String>();
+
+            for (int i = 0; i < 10; i++)
+            {
+                configIn.Add(Guid.NewGuid().ToString());
+            }
+
+            IConfigurationTextUpdater updater = new ConfigurationTextUpdater();
+            IEnumerable<String> configOut = updater.Update(configIn, _Dict);
+
+            Assert.IsTrue(configOut == null);
+
 
         }
+
 
 
     }
