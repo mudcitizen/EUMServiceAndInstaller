@@ -17,5 +17,14 @@
     <Setting Name="Wrong_DriveType" Type="System.String" Scope="User">
       <Value Profile="(Default)">The directory must be on a {0} disk drive.</Value>
     </Setting>
+    <Setting Name="InvalidConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ConnectionString is not a valid connection string.</Value>
+    </Setting>
+    <Setting Name="ConnectionStringCannotBeEmpty" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ConnectionString cannot be empty</Value>
+    </Setting>
+    <Setting Name="ConnectionStringMissingRequiredProperty" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ConnectionString is missing a required property - {0}</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

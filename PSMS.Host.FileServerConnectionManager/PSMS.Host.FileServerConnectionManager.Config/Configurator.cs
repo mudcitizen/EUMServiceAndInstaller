@@ -1,5 +1,11 @@
-﻿using System;
+﻿using Sms.ConnectionUI.Client;
+using Sms.ConnectionUI.VfpDataProvider;
+using System;
 using System.Collections.Generic;
+using System.Data.Common;
+using System.Data.OleDb;
+using System.Data.SqlClient;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -12,40 +18,41 @@ namespace PSMS.Host.FileServerConnectionManager.Config
 
         String _Slash = Path.DirectorySeparatorChar.ToString();
 
-        public String GetHostFolder()
+
+        public void Configure(String targetDir)
         {
-            FolderBrowserDialog dlg = new FolderBrowserDialog();
-            dlg.ShowNewFolderButton = false;
-            DialogResult dr = DialogResult.None;
 
-            List<DirectoryValidator> dvs = new List<DirectoryValidator>();
-            dvs.Add(new RequiredFileDirectoryValidator("syEumreq.dbf"));
-            dvs.Add(new DriveTypeDirectoryValidator(DriveType.Fixed));
+            IConnectionStringProvider csp = new EumInstallClient();
+            IConnectionStringValidator csv = new ConnectionStringValidator();
 
-            Boolean done = false;
-            while (done == false)
+
+            String errMsg = "Not empty";
+
+            while (!String.IsNullOrEmpty(errMsg))
             {
 
-                dlg.Description = Properties.Settings.Default.Get_Host_Dialog_Description;
-                dr = dlg.ShowDialog();
+                String connStr = csp.GetConnectionString();
+                errMsg = csv.Validate(connStr);
 
-                if (dr == DialogResult.OK)
+
+                if (String.IsNullOrEmpty(errMsg))
                 {
-                    done = true;
-                    foreach (DirectoryValidator dv in dvs)
-                    {
-                        String msg = dv.IsValid(dlg.SelectedPath);
-                        if (!String.IsNullOrEmpty(msg))
-                        {
-                            MessageBox.Show(msg, Properties.Settings.Default.MessageBox_Title, MessageBoxButtons.OK);
-                            done = false;
-                        }
-                    }
+
+                    // update app.config 
                 }
+                else
+                {
+                    MessageBox.Show(errMsg);
+                }
+
             }
 
-            return dlg.SelectedPath;
+
+
+            // See if the connStr is complete
+
         }
+
 
         public void UpdateConfig(String targetDir, String hostDir)
         {

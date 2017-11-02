@@ -22,8 +22,7 @@ namespace PSMS.Host.FileServerConnectionManager.Config
         {
             base.Install(stateSaver);
             Configurator cfg = new Configurator();
-            String hostDir = cfg.GetHostFolder();
-            cfg.UpdateConfig(Context.Parameters["TargetDir"], hostDir);
+            cfg.Configure(Context.Parameters["TargetDir"]);
         }
 
     }

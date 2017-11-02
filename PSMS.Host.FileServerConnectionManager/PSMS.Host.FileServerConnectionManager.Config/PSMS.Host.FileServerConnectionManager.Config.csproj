@@ -56,15 +56,28 @@
     <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Data.ConnectionUI">
+      <HintPath>C:\ConnectionDialog-master\Source\ConnectionUIDialog\bin\Debug\Microsoft.Data.ConnectionUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog">
+      <HintPath>..\Dlls\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
     <Reference Include="PSMS.Host.WMI.Contracts">
       <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.Contracts\bin\Release\PSMS.Host.WMI.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="PSMS.Host.WMI.LogicalDisks">
       <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.LogicalDisks\bin\Release\PSMS.Host.WMI.LogicalDisks.dll</HintPath>
     </Reference>
+    <Reference Include="Sms.ConnectionUI.Client">
+      <HintPath>..\Dlls\Sms.ConnectionUI.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sms.ConnectionUI.VfpDataProvider">
+      <HintPath>..\Dlls\Sms.ConnectionUI.VfpDataProvider.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -74,8 +87,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigurationTextUpdater.cs" />
     <Compile Include="Configurator.cs" />
+    <Compile Include="ConnectionStringValidator.cs" />
     <Compile Include="DirectoryValidator.cs" />
+    <Compile Include="IConfigurationTextUpdater.cs" />
+    <Compile Include="IConnectionStringValidator.cs" />
     <Compile Include="Installer.cs">
       <SubType>Component</SubType>
     </Compile>
