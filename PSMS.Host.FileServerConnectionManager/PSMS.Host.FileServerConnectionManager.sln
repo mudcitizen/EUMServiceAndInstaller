@@ -31,31 +31,49 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Default = Debug|Default
 		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D25C56DA-0AC8-4609-8BC2-77ADEA2E7F21}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{D25C56DA-0AC8-4609-8BC2-77ADEA2E7F21}.Debug|Default.ActiveCfg = Debug|x86
 		{D25C56DA-0AC8-4609-8BC2-77ADEA2E7F21}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{D25C56DA-0AC8-4609-8BC2-77ADEA2E7F21}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D25C56DA-0AC8-4609-8BC2-77ADEA2E7F21}.Debug|x86.ActiveCfg = Debug|x86
+		{D25C56DA-0AC8-4609-8BC2-77ADEA2E7F21}.Debug|x86.Build.0 = Debug|x86
 		{23F428E1-48E4-4995-AA97-9903A89CA0DC}.Debug|Any CPU.ActiveCfg = Debug
 		{23F428E1-48E4-4995-AA97-9903A89CA0DC}.Debug|Any CPU.Build.0 = Debug
 		{23F428E1-48E4-4995-AA97-9903A89CA0DC}.Debug|Default.ActiveCfg = Debug
 		{23F428E1-48E4-4995-AA97-9903A89CA0DC}.Debug|Default.Build.0 = Debug
 		{23F428E1-48E4-4995-AA97-9903A89CA0DC}.Debug|Mixed Platforms.ActiveCfg = Debug
 		{23F428E1-48E4-4995-AA97-9903A89CA0DC}.Debug|Mixed Platforms.Build.0 = Debug
+		{23F428E1-48E4-4995-AA97-9903A89CA0DC}.Debug|x86.ActiveCfg = Debug
+		{23F428E1-48E4-4995-AA97-9903A89CA0DC}.Debug|x86.Build.0 = Debug
 		{2BB40AC0-279C-46F0-9A2C-B6BFC4E3E30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2BB40AC0-279C-46F0-9A2C-B6BFC4E3E30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BB40AC0-279C-46F0-9A2C-B6BFC4E3E30A}.Debug|Default.ActiveCfg = Debug|Any CPU
 		{2BB40AC0-279C-46F0-9A2C-B6BFC4E3E30A}.Debug|Default.Build.0 = Debug|Any CPU
 		{2BB40AC0-279C-46F0-9A2C-B6BFC4E3E30A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{2BB40AC0-279C-46F0-9A2C-B6BFC4E3E30A}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{2BB40AC0-279C-46F0-9A2C-B6BFC4E3E30A}.Debug|x86.ActiveCfg = Debug|x86
+		{2BB40AC0-279C-46F0-9A2C-B6BFC4E3E30A}.Debug|x86.Build.0 = Debug|x86
 		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Debug|Default.ActiveCfg = Debug|Any CPU
 		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Debug|x86.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,11 +84,6 @@ Global
 		Release|Default = Release|Default
 		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Debug|Default = Debug|Default
-		Debug|Mixed Platforms = Debug|Mixed Platforms
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = PSMS.Host.FileServerConnectionManager.vsmdi

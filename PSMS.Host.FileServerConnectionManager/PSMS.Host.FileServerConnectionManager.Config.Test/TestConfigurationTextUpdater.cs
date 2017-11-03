@@ -28,7 +28,6 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Test
         public void TestChange()
         {
 
-
             IList<String> configIn = new List<String>();
             foreach (KeyValuePair<String, String> kvp in _Dict) {
                 configIn.Add(String.Format("{0} - {1}", kvp.Key, kvp.Key));
@@ -78,6 +77,36 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Test
 
 
         }
+
+        [TestMethod]
+        public void TestNoChange2()
+        {
+            IList<String> configIn = new List<String>();
+
+            foreach(KeyValuePair<String,String> kvp in _Dict)
+            {
+                // Key is lower case
+                Assert.AreEqual(kvp.Key.ToLower(), kvp.Key);
+                // Value is Key.ToUpper()
+                Assert.AreEqual(kvp.Key.ToUpper(), kvp.Value);
+                configIn.Add(String.Format("{0} - {1}", Guid.NewGuid().ToString().ToUpper(), kvp.Key.ToLower()));
+            }
+
+            IConfigurationTextUpdater updater = new ConfigurationTextUpdater();
+            IEnumerable<String> configOut = updater.Update(configIn, _Dict);
+
+            Assert.AreEqual(configIn.Count(), configOut.Count());
+
+            // No line in "out" should match a line in "in" - ie every line should change
+            foreach (String lineOut in configOut)
+                Assert.IsTrue(configIn.Where(lineIn => lineIn == lineOut).Count() == 0);
+
+            // Every line in out should change should match a line from in where in has been uppered()
+            foreach (String lineOut in configOut)
+                Assert.IsTrue(configIn.Where(lineIn => lineIn.ToUpper() == lineOut).Count() == 1);
+
+        }
+
 
         [TestMethod]
         public void TestNoChange()
