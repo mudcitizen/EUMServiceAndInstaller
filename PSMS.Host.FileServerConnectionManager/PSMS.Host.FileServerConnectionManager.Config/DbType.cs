@@ -5,10 +5,8 @@ using System.Text;
 
 namespace PSMS.Host.FileServerConnectionManager.Config
 {
-    public interface IConnectionStringValidator
+    public enum DbType
     {
-        String Validate(String connectionString);
-
-        DbType GetDbType(String connectionString);
+        Vfp, Sql
     }
 }

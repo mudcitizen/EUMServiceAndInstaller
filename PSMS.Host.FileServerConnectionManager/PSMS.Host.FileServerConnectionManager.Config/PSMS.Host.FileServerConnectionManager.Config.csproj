@@ -87,9 +87,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="ConfigurationTextUpdater.cs" />
     <Compile Include="Configurator.cs" />
     <Compile Include="ConnectionStringValidator.cs" />
+    <Compile Include="DbType.cs" />
     <Compile Include="DirectoryValidator.cs" />
     <Compile Include="IConfigurationTextUpdater.cs" />
     <Compile Include="IConnectionStringValidator.cs" />
@@ -111,7 +113,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>

@@ -5,10 +5,8 @@ using System.Text;
 
 namespace PSMS.Host.FileServerConnectionManager.Config
 {
-    public interface IConnectionStringValidator
+    public interface IConfigurationTextUpdater
     {
-        String Validate(String connectionString);
-
-        DbType GetDbType(String connectionString);
+        IEnumerable<String> Update(IEnumerable<String> config, IDictionary<String,String> configKeyValuePairs);
     }
 }

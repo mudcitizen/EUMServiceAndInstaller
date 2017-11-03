@@ -13,7 +13,7 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Properties {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.1.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
@@ -118,6 +118,30 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Properties {
             }
             set {
                 this["ConnectionStringMissingRequiredProperty"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ConnectionString Data Source does not exist")]
+        public string ConnectionStringDataSourceDoesNotExist {
+            get {
+                return ((string)(this["ConnectionStringDataSourceDoesNotExist"]));
+            }
+            set {
+                this["ConnectionStringDataSourceDoesNotExist"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source")]
+        public string DataSource {
+            get {
+                return ((string)(this["DataSource"]));
+            }
+            set {
+                this["DataSource"] = value;
             }
         }
     }

@@ -26,5 +26,11 @@
     <Setting Name="ConnectionStringMissingRequiredProperty" Type="System.String" Scope="User">
       <Value Profile="(Default)">ConnectionString is missing a required property - {0}</Value>
     </Setting>
+    <Setting Name="ConnectionStringDataSourceDoesNotExist" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ConnectionString Data Source does not exist</Value>
+    </Setting>
+    <Setting Name="DataSource" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

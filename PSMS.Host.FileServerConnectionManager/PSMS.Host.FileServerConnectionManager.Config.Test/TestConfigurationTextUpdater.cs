@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq; 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Text;
@@ -18,10 +19,14 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Test
             const String one = "one";
             const String two = "two";
             const String three = "three";
-            _Dict = new Dictionary<String, String>();
-            _Dict.Add(one, one.ToUpper());
-            _Dict.Add(two, two.ToUpper());
-            _Dict.Add(three, three.ToUpper());
+            IList<String> terms = new List<String>();
+            terms.Add(one.ToLower());
+            terms.Add(two.ToLower());
+            terms.Add(three.ToLower());
+
+            _Dict = new Dictionary<string, string>();
+            foreach (String term in terms)
+                _Dict.Add(term, term.ToUpper());
         }
 
         [TestMethod]
@@ -79,7 +84,7 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Test
         }
 
         [TestMethod]
-        public void TestNoChange2()
+        public void TestChange2()
         {
             IList<String> configIn = new List<String>();
 
@@ -123,9 +128,47 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Test
 
             Assert.IsTrue(configOut == null);
 
+        }
+
+        [TestMethod]
+        public void TestUpdate()
+        {
+            const String fileInName = @"C:\Temp\app.config";
+            const String fileOutName = @"C:\Temp\test.config";
+            const String expDbType = Constants.ConfigTokenValues.DbTypeVfp;
+            const String expDbName = Constants.ConfigTokenValues.DbNameVfp;
+
+            Assert.IsTrue(File.Exists(fileInName));
+
+            IEnumerable<String> linesIn = File.ReadLines(fileInName);
+            String lines = LinesToString(linesIn);
+            Assert.IsTrue(lines.Contains(Constants.ConfigTokenNames.DbType));
+            Assert.IsTrue(lines.Contains(Constants.ConfigTokenNames.DbName));
+
+            IDictionary<String, String> terms = new Dictionary<String, String>();
+
+            terms.Add(Constants.ConfigTokenNames.DbType, expDbType);
+
+            terms.Add(Constants.ConfigTokenNames.DbName, Constants.ConfigTokenValues.DbNameVfp);
+
+            IConfigurationTextUpdater updater = new ConfigurationTextUpdater();
+            IEnumerable<String> linesOut = updater.Update(linesIn, terms);
+
+            File.WriteAllLines(fileOutName, linesOut);
+            lines = LinesToString(linesOut);
+            Assert.IsFalse(lines.Contains(Constants.ConfigTokenNames.DbType));
+            Assert.IsFalse(lines.Contains(Constants.ConfigTokenNames.DbName));
+
+            int x = 0;
 
         }
 
+        String LinesToString(IEnumerable<String> lines) {
+            StringBuilder sb = new StringBuilder();
+            foreach (String s in lines)
+                sb.AppendLine(s);
+            return sb.ToString();
+        }
 
 
     }
