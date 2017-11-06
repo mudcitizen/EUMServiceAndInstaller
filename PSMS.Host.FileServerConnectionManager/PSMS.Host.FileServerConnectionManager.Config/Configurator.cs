@@ -54,8 +54,7 @@ namespace PSMS.Host.FileServerConnectionManager.Config
                     if (dbType == DbType.Vfp)
                     {
                         connStrBldr = new OleDbConnectionStringBuilder(connStr);
-                        configTerms.Add(new KeyValuePair<String, String>(Constants.ConfigTokenNames.SqlServerName,connStrBldr[Constants.ConnectionStringDetails.DataSourcePropertyName].ToString()));
-                        configTerms.Add(new KeyValuePair<String, String>(Constants.ConfigTokenNames.SqlDbName, connStrBldr[Constants.ConnectionStringDetails.InitialCatalogPropertyName].ToString()));
+                        configTerms.Add(new KeyValuePair<String, String>(Constants.ConfigTokenNames.HostDirectory,connStrBldr[Constants.ConnectionStringDetails.DataSourcePropertyName].ToString()));
 
                         dbTypeString = Constants.ConfigTokenValues.DbTypeVfp;
                         dbNameString = Constants.ConfigTokenValues.DbNameVfp;
@@ -63,6 +62,8 @@ namespace PSMS.Host.FileServerConnectionManager.Config
                     else
                     {
                         connStrBldr = new SqlConnectionStringBuilder(connStr);
+                        configTerms.Add(new KeyValuePair<String, String>(Constants.ConfigTokenNames.SqlServerName, connStrBldr[Constants.ConnectionStringDetails.DataSourcePropertyName].ToString()));
+                        configTerms.Add(new KeyValuePair<String, String>(Constants.ConfigTokenNames.SqlDbName, connStrBldr[Constants.ConnectionStringDetails.InitialCatalogPropertyName].ToString()));
 
                         dbTypeString = Constants.ConfigTokenValues.DbTypeSql;
                         dbNameString = Constants.ConfigTokenValues.DbNameSql;
@@ -74,7 +75,7 @@ namespace PSMS.Host.FileServerConnectionManager.Config
                     foreach (String fileName in configFiles)
                     {
                         IEnumerable<String> configIn = File.ReadAllLines(fileName);
-                        IEnumerable<String> configOut = configUpdater.Update(configIn,);
+                        IEnumerable<String> configOut = configUpdater.Update(configIn,configTerms);
                         if (configOut != null)
                             File.WriteAllLines(fileName,configOut);
                     }
