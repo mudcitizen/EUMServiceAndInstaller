@@ -63,6 +63,7 @@
     <Compile Include="TestConfigurationTextUpdater.cs" />
     <Compile Include="TestConfigurator.cs" />
     <Compile Include="TestConnectionStringValidator.cs" />
+    <Compile Include="TestConstants.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -135,8 +135,8 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Test
         {
             const String fileInName = @"C:\Temp\app.config";
             const String fileOutName = @"C:\Temp\test.config";
-            const String expDbType = Constants.ConfigTokenValues.DbTypeVfp;
-            const String expDbName = Constants.ConfigTokenValues.DbNameVfp;
+            String expDbType = Constants.ConfigTokenValues.DbTypeVfp;
+            String expDbName = Constants.ConfigTokenValues.DbNameVfp;
 
             Assert.IsTrue(File.Exists(fileInName));
 
