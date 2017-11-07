@@ -62,6 +62,10 @@
     <Reference Include="Microsoft.Data.ConnectionUI.Dialog">
       <HintPath>..\Dlls\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
     </Reference>
+    <Reference Include="PSMS.Host.WMI.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.Common\bin\Release\PSMS.Host.WMI.Common.dll</HintPath>
+    </Reference>
     <Reference Include="PSMS.Host.WMI.Contracts">
       <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.Contracts\bin\Release\PSMS.Host.WMI.Contracts.dll</HintPath>
     </Reference>

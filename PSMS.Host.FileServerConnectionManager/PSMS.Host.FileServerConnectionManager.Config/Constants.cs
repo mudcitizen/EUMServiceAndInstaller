@@ -9,8 +9,22 @@ namespace PSMS.Host.FileServerConnectionManager.Config
     {
         public static class ConfigTokenNames
         {
-            public const String DbType = "{DbType}";
-            public const String DbName = "{DbName}";
+            public static String DbType
+            {
+                get
+                {
+                    return "{" + PSMS.Host.WMI.Common.Constants.AppSettingKeys.DbType + "}";
+                }
+            }
+
+            public static String DbName
+            {
+                get
+                {
+                    return "{" + PSMS.Host.WMI.Common.Constants.AppSettingKeys.DbName + "}";
+                }
+            }
+
             public const String HostDirectory = "{HostDirectory}";
             public const String SqlServerName = "{SqlServerName}";
             public const String SqlDbName = "{SqlDbName}";
@@ -18,10 +32,39 @@ namespace PSMS.Host.FileServerConnectionManager.Config
 
         public static class ConfigTokenValues
         {
-            public const String DbTypeVfp = "VFP";
-            public const String DbTypeSql = "SQL";
-            public const String DbNameVfp = "HostDb";
-            public const String DbNameSql = "HostSql";
+            public static String DbTypeVfp
+            {
+                get
+                {
+                    return PSMS.Host.WMI.Common.Constants.AppSettingValues.VfpDbType ;
+                }
+            }
+
+            public static String DbTypeSql
+            {
+                get
+                {
+                    return PSMS.Host.WMI.Common.Constants.AppSettingValues.SqlDbType;
+                }
+            }
+
+            public static String DbNameVfp
+            {
+                get
+                {
+                    return PSMS.Host.WMI.Common.Constants.ConnectionNames.Vfp;
+                }
+            }
+
+            public static String DbNameSql
+            {
+                get
+                {
+                    return PSMS.Host.WMI.Common.Constants.ConnectionNames.Sql;
+                }
+            }
+
+
         }
 
         public static class ConnectionStringDetails
