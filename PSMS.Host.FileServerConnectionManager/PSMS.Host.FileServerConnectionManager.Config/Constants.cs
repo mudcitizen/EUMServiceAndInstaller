@@ -24,10 +24,9 @@ namespace PSMS.Host.FileServerConnectionManager.Config
                     return "{" + PSMS.Host.WMI.Common.Constants.AppSettingKeys.DbName + "}";
                 }
             }
-
-            public const String HostDirectory = "{HostDirectory}";
-            public const String SqlServerName = "{SqlServerName}";
-            public const String SqlDbName = "{SqlDbName}";
+            public static String HostDirectory { get { return "{HostDirectory}"; } }
+            public static String SqlServerName { get { return "{SqlServerName}"; } }
+            public static String SqlDbName { get { return  "{SqlDbName}"; } }
         }
 
         public static class ConfigTokenValues
@@ -69,10 +68,30 @@ namespace PSMS.Host.FileServerConnectionManager.Config
 
         public static class ConnectionStringDetails
         {
-            public const String VfpProviderPropertyName = "Provider";
-            public const String VfpProviderPropertyValue = "VFPOLEDB.1";
-            public const String InitialCatalogPropertyName = "Initial Catalog";
-            public const String DataSourcePropertyName = "Data Source";
+            public static String VfpProviderPropertyName
+            {
+                get { return "Provider";
+                }
+            }
+            public static String VfpProviderPropertyValue
+            {
+                get
+                {
+                    return "VFPOLEDB.1";
+                }
+            }
+            public static String InitialCatalogPropertyName
+            {
+                get
+                {
+                    return "Initial Catalog";
+                }
+            }
+            public static String DataSourcePropertyName
+            {
+                get
+                { return "Data Source"; }
+            }
         }
     }
 }
