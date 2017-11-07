@@ -64,13 +64,15 @@
     </Reference>
     <Reference Include="PSMS.Host.WMI.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.Common\bin\Release\PSMS.Host.WMI.Common.dll</HintPath>
+      <HintPath>..\Dlls\PSMS.Host.WMI.Common.dll</HintPath>
     </Reference>
-    <Reference Include="PSMS.Host.WMI.Contracts">
-      <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.Contracts\bin\Release\PSMS.Host.WMI.Contracts.dll</HintPath>
+    <Reference Include="PSMS.Host.WMI.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\PSMS.Host.WMI.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="PSMS.Host.WMI.LogicalDisks">
-      <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.LogicalDisks\bin\Release\PSMS.Host.WMI.LogicalDisks.dll</HintPath>
+    <Reference Include="PSMS.Host.WMI.LogicalDisks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\PSMS.Host.WMI.LogicalDisks.dll</HintPath>
     </Reference>
     <Reference Include="Sms.ConnectionUI.Client">
       <HintPath>..\Dlls\Sms.ConnectionUI.Client.dll</HintPath>

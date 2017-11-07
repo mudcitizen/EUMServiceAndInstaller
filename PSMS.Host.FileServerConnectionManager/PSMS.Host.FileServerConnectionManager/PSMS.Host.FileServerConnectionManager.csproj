@@ -55,19 +55,21 @@
     <StartupObject>PSMS.Host.FileServerConnectionManager.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PSMS.Host.WMI.ClassFactory">
-      <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.ClassFactory\bin\Release\PSMS.Host.WMI.ClassFactory.dll</HintPath>
+    <Reference Include="PSMS.Host.WMI.ClassFactory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\PSMS.Host.WMI.ClassFactory.dll</HintPath>
     </Reference>
     <Reference Include="PSMS.Host.WMI.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.Common\bin\Release\PSMS.Host.WMI.Common.dll</HintPath>
+      <HintPath>..\Dlls\PSMS.Host.WMI.Common.dll</HintPath>
     </Reference>
     <Reference Include="PSMS.Host.WMI.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.Contracts\bin\Release\PSMS.Host.WMI.Contracts.dll</HintPath>
+      <HintPath>..\Dlls\PSMS.Host.WMI.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="PSMS.Host.WMI.RequestProcessing">
-      <HintPath>..\..\..\PSMS.Host.WMI\PSMS.Host.WMI.RequestProcessing\bin\Release\PSMS.Host.WMI.RequestProcessing.dll</HintPath>
+    <Reference Include="PSMS.Host.WMI.RequestProcessing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\PSMS.Host.WMI.RequestProcessing.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -83,6 +85,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs" />
+    <Compile Include="Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
     <Compile Include="Service.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -117,6 +129,13 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectInstaller.resx" />
+    <EmbeddedResource Include="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

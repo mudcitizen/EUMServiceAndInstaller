@@ -19,12 +19,14 @@ namespace PSMS.Host.FileServerConnectionManager
     {
         Timer _Timer;
         Int32 _Interval = 1;
+        String _DbType;
 
         public Service()
         {
             InitializeComponent();
             try
             {
+                String _DbType = ConfigurationManager.AppSettings[Constants.AppSettingKeys.DbType];
                 String strInterval = ConfigurationManager.AppSettings["TimerInterval"];
                 if (!Int32.TryParse(strInterval, out _Interval))
                     _Interval = 1000;
@@ -39,7 +41,15 @@ namespace PSMS.Host.FileServerConnectionManager
 
         protected override void OnStart(string[] args)
         {
-            _Timer.Change(_Interval,_Interval);
+            if (!String.IsNullOrEmpty(_DbType) && (_DbType.Equals(Constants.AppSettingValues.SqlDbType) || _DbType.Equals(Constants.AppSettingValues.VfpDbType)))
+            {
+                _Timer.Change(_Interval, _Interval);
+            }
+            else
+            {
+                HandleException(new System.Configuration.ConfigurationErrorsException(Strings.InvalidConfiguration_DbTypeMustBeVfpOrSql));
+                Stop();
+            }
         }
 
         protected override void OnStop()
