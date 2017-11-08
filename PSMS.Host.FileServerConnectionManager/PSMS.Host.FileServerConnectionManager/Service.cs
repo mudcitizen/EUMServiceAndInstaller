@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
-using System.ServiceProcess;
-using System.Text;
-using System.Threading;
-using PSMS.Host.WMI.Contracts;
+﻿using PSMS.Host.WMI.ClassFactory;
 using PSMS.Host.WMI.Common;
-using PSMS.Host.WMI.ClassFactory;
+using PSMS.Host.WMI.Contracts;
 using PSMS.Host.WMI.RequestProcessing;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.ServiceProcess;
+using System.Threading;
+using System.Configuration;
 
 namespace PSMS.Host.FileServerConnectionManager
 {
@@ -26,7 +22,8 @@ namespace PSMS.Host.FileServerConnectionManager
             InitializeComponent();
             try
             {
-                String _DbType = ConfigurationManager.AppSettings[Constants.AppSettingKeys.DbType];
+                _DbType = ConfigurationManager.AppSettings[Constants.AppSettingKeys.DbType];
+
                 String strInterval = ConfigurationManager.AppSettings["TimerInterval"];
                 if (!Int32.TryParse(strInterval, out _Interval))
                     _Interval = 1000;
