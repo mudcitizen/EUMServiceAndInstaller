@@ -55,6 +55,29 @@
     <StartupObject>PSMS.Host.FileServerConnectionManager.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Data.ConnectionUI">
+      <HintPath>..\Dlls\Microsoft.Data.ConnectionUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog">
+      <HintPath>..\Dlls\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Dlls\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\Dlls\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\Dlls\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
     <Reference Include="PSMS.Host.WMI.ClassFactory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Dlls\PSMS.Host.WMI.ClassFactory.dll</HintPath>
@@ -67,9 +90,27 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Dlls\PSMS.Host.WMI.Contracts.dll</HintPath>
     </Reference>
+    <Reference Include="PSMS.Host.WMI.LogicalDisks">
+      <HintPath>..\Dlls\PSMS.Host.WMI.LogicalDisks.dll</HintPath>
+    </Reference>
+    <Reference Include="PSMS.Host.WMI.OpenFiles">
+      <HintPath>..\Dlls\PSMS.Host.WMI.OpenFiles.dll</HintPath>
+    </Reference>
     <Reference Include="PSMS.Host.WMI.RequestProcessing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Dlls\PSMS.Host.WMI.RequestProcessing.dll</HintPath>
+    </Reference>
+    <Reference Include="PSMS.Host.WMI.ServerConnections">
+      <HintPath>..\Dlls\PSMS.Host.WMI.ServerConnections.dll</HintPath>
+    </Reference>
+    <Reference Include="PSMS.Host.WMI.ServerSessions">
+      <HintPath>..\Dlls\PSMS.Host.WMI.ServerSessions.dll</HintPath>
+    </Reference>
+    <Reference Include="PSMS.Host.WMI.Shares">
+      <HintPath>..\Dlls\PSMS.Host.WMI.Shares.dll</HintPath>
+    </Reference>
+    <Reference Include="PSMS.Utility.Data.DbHandler">
+      <HintPath>..\Dlls\PSMS.Utility.Data.DbHandler.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

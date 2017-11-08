@@ -77,7 +77,9 @@ namespace PSMS.Host.FileServerConnectionManager.Config
                         IEnumerable<String> configIn = File.ReadAllLines(fileName);
                         IEnumerable<String> configOut = configUpdater.Update(configIn,configTerms);
                         if (configOut != null)
-                            File.WriteAllLines(fileName,configOut);
+                        {
+                            File.WriteAllLines(fileName, configOut);
+                        }
                     }
 
                 }
