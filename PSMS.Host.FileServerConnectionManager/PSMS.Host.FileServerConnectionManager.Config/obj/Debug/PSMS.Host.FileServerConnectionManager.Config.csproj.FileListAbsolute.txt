@@ -1,0 +1,15 @@
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\PSMS.Host.FileServerConnectionManager.Config.dll.config
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\PSMS.Host.FileServerConnectionManager.Config.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\PSMS.Host.FileServerConnectionManager.Config.pdb
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\Microsoft.Data.ConnectionUI.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\PSMS.Host.WMI.Common.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\PSMS.Host.WMI.Contracts.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\PSMS.Host.WMI.LogicalDisks.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\Sms.ConnectionUI.Client.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\Sms.ConnectionUI.VfpDataProvider.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\PSMS.Host.WMI.RequestProcessing.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\Debug\Microsoft.Data.ConnectionUI.pdb
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\obj\Debug\PSMS.Host.FileServerConnectionManager.Config.csprojResolveAssemblyReference.cache
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\obj\Debug\PSMS.Host.FileServerConnectionManager.Config.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\obj\Debug\PSMS.Host.FileServerConnectionManager.Config.pdb
