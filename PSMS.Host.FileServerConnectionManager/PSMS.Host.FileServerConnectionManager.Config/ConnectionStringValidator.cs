@@ -7,6 +7,7 @@ using System.Data.Common;
 using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.IO;
+using PSMS.Utility.Data.DbHandler;
 
 namespace PSMS.Host.FileServerConnectionManager.Config
 {
@@ -68,11 +69,13 @@ namespace PSMS.Host.FileServerConnectionManager.Config
             if (String.IsNullOrEmpty(errMsg))
             {
 
+                const String requiredTableName = "syeumreq";
+
                 if (dbType == DbType.Vfp)
                 {
 
                     List<DirectoryValidator> dvs = new List<DirectoryValidator>();
-                    dvs.Add(new RequiredFileDirectoryValidator("syEumreq.dbf"));
+                    dvs.Add(new RequiredFileDirectoryValidator(Path.ChangeExtension(requiredTableName, "dbf")));
                     dvs.Add(new DriveTypeDirectoryValidator(DriveType.Fixed));
 
                     foreach (DirectoryValidator dv in dvs)
@@ -88,7 +91,19 @@ namespace PSMS.Host.FileServerConnectionManager.Config
                 else
                 {
                     // Make sure SYEUMREQ.DBF exists in the DB
+                    const String parmName = "@TableName";
                     String dbName = connectionStringBldr[Constants.ConnectionStringDetails.InitialCatalogPropertyName].ToString();
+                    String cmdStr = String.Format("SELECT COUNT(*) FROM {0}.INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = {1}", dbName, parmName);
+                    using (SqlCommand sqlCmd = new SqlCommand(cmdStr))
+                    {
+                        sqlCmd.Parameters.Add(new SqlParameter(parmName, requiredTableName));
+                        DbHandler dbHandler = new DbHandler(connectionString, Constants.ConnectionStringDetails.SqlProviderPropertyValue);
+
+                        if ((int)dbHandler.DbExecuteScalar(sqlCmd) == 0)
+                        {
+                            errMsg = String.Format(Properties.Settings.Default.InvalidDB, requiredTableName);
+                        }
+                    }
                 }
 
             }

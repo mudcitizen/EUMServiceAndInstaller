@@ -86,17 +86,30 @@ Global
 		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Debug|Default.ActiveCfg = Debug|Any CPU
 		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Release|Default.ActiveCfg = Release|Any CPU
-		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Release|x86.ActiveCfg = Release|Any CPU
+		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Release|Default.ActiveCfg = Debug|Any CPU
+		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D8357340-7A8B-4520-BEB4-3962D6A6E7E7}.Release|x86.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

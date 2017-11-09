@@ -58,12 +58,21 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Test
         [TestMethod]
         public void TestValidSqlConnectionString()
         {
-            const String connStr = "Data Source = LANEK-LT; Initial Catalog = LAPTOP_21_000511; User ID = PSMSUsr; Password =$1koj1 @VGR2";
+            const String connStr = "Data Source = LANEK-LT; Initial Catalog = LAPTOP_21_000825;Integrated Security=True";
             _sqlConnStrBldr.ConnectionString = connStr;
             String s = Validate(_sqlConnStrBldr);
             Assert.IsTrue(String.IsNullOrEmpty(s));
         }
 
+        [TestMethod]
+        public void TestInvalidSqlConnectionStringNoSyeumreq()
+        {
+            const String connStr = "Data Source = LANEK-LT; Initial Catalog = ReportServer;Integrated Security=True";
+            _sqlConnStrBldr.ConnectionString = connStr;
+            String s = Validate(_sqlConnStrBldr);
+            Assert.IsFalse(String.IsNullOrEmpty(s));
+            Assert.IsTrue(s.ToUpper().Contains("syeumreq".ToUpper()));
+        }
 
 
         String Validate(DbConnectionStringBuilder connStrBldr) {

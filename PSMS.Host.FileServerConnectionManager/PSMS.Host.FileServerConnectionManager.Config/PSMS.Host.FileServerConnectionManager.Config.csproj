@@ -74,6 +74,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Dlls\PSMS.Host.WMI.LogicalDisks.dll</HintPath>
     </Reference>
+    <Reference Include="PSMS.Utility.Data.DbHandler, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dlls\PSMS.Utility.Data.DbHandler.dll</HintPath>
+    </Reference>
     <Reference Include="Sms.ConnectionUI.Client">
       <HintPath>..\Dlls\Sms.ConnectionUI.Client.dll</HintPath>
     </Reference>

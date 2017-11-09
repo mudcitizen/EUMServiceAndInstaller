@@ -92,6 +92,8 @@ namespace PSMS.Host.FileServerConnectionManager.Config
                 get
                 { return "Data Source"; }
             }
+
+            public static String SqlProviderPropertyValue => "System.Data.SqlClient";
         }
     }
 }

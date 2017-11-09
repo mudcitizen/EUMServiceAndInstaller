@@ -32,5 +32,8 @@
     <Setting Name="DataSource" Type="System.String" Scope="User">
       <Value Profile="(Default)">Data Source</Value>
     </Setting>
+    <Setting Name="InvalidDB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The selected database is not a Host database because it does not have a table named {0}</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

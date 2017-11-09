@@ -144,5 +144,18 @@ namespace PSMS.Host.FileServerConnectionManager.Config.Properties {
                 this["DataSource"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("The selected database is not a Host database because it does not have a table nam" +
+            "ed {0}")]
+        public string InvalidDB {
+            get {
+                return ((string)(this["InvalidDB"]));
+            }
+            set {
+                this["InvalidDB"] = value;
+            }
+        }
     }
 }
