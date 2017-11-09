@@ -90,7 +90,16 @@ namespace PSMS.Host.FileServerConnectionManager.Config
                 }
                 else
                 {
+                    /*
+                     * The following code works in a UnitTest - but we can't use it in the Installer because 
+                     * the installer runs as NT Authority\SYSTEM and may not have access to the DB.   When this 
+                     * is the case the install fails - even with try {} block .... 
+                     * 
+                     * By default NT Authority\SYSTEM only has the Public Server Role.  And at the DB level 
+                     * Public can't do jack...
+
                     // Make sure SYEUMREQ.DBF exists in the DB
+
                     const String parmName = "@TableName";
                     String dbName = connectionStringBldr[Constants.ConnectionStringDetails.InitialCatalogPropertyName].ToString();
                     String cmdStr = String.Format("SELECT COUNT(*) FROM {0}.INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = {1}", dbName, parmName);
@@ -104,6 +113,8 @@ namespace PSMS.Host.FileServerConnectionManager.Config
                             errMsg = String.Format(Properties.Settings.Default.InvalidDB, requiredTableName);
                         }
                     }
+
+                    */
                 }
 
             }
