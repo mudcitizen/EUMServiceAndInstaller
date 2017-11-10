@@ -20,6 +20,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dlls", "Dlls", "{41C05C2C-6
 	ProjectSection(SolutionItems) = preProject
 		Dlls\Microsoft.Data.ConnectionUI.Dialog.dll = Dlls\Microsoft.Data.ConnectionUI.Dialog.dll
 		Dlls\Microsoft.Data.ConnectionUI.dll = Dlls\Microsoft.Data.ConnectionUI.dll
+		Dlls\Microsoft.Practices.EnterpriseLibrary.Common.dll = Dlls\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Dlls\Microsoft.Practices.EnterpriseLibrary.Data.dll = Dlls\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		Dlls\Microsoft.Practices.ServiceLocation.dll = Dlls\Microsoft.Practices.ServiceLocation.dll
+		Dlls\Microsoft.Practices.Unity.dll = Dlls\Microsoft.Practices.Unity.dll
+		Dlls\Microsoft.Practices.Unity.Interception.dll = Dlls\Microsoft.Practices.Unity.Interception.dll
+		Dlls\PSMS.Host.WMI.ClassFactory.dll = Dlls\PSMS.Host.WMI.ClassFactory.dll
+		Dlls\PSMS.Host.WMI.Common.dll = Dlls\PSMS.Host.WMI.Common.dll
+		Dlls\PSMS.Host.WMI.Common.Tests.dll = Dlls\PSMS.Host.WMI.Common.Tests.dll
+		Dlls\PSMS.Host.WMI.Contracts.dll = Dlls\PSMS.Host.WMI.Contracts.dll
+		Dlls\PSMS.Host.WMI.LogicalDisks.dll = Dlls\PSMS.Host.WMI.LogicalDisks.dll
+		Dlls\PSMS.Host.WMI.OpenFiles.dll = Dlls\PSMS.Host.WMI.OpenFiles.dll
+		Dlls\PSMS.Host.WMI.RequestProcessing.dll = Dlls\PSMS.Host.WMI.RequestProcessing.dll
+		Dlls\PSMS.Host.WMI.ServerConnections.dll = Dlls\PSMS.Host.WMI.ServerConnections.dll
+		Dlls\PSMS.Host.WMI.ServerSessions.dll = Dlls\PSMS.Host.WMI.ServerSessions.dll
+		Dlls\PSMS.Host.WMI.Shares.dll = Dlls\PSMS.Host.WMI.Shares.dll
+		Dlls\PSMS.Host.WMI.Shares.Tests.dll = Dlls\PSMS.Host.WMI.Shares.Tests.dll
+		Dlls\PSMS.Host.WMI.TestConnection.dll = Dlls\PSMS.Host.WMI.TestConnection.dll
+		Dlls\PSMS.Utility.Data.DbHandler.dll = Dlls\PSMS.Utility.Data.DbHandler.dll
 		Dlls\Sms.ConnectionUI.Client.dll = Dlls\Sms.ConnectionUI.Client.dll
 		Dlls\Sms.ConnectionUI.VfpDataProvider.dll = Dlls\Sms.ConnectionUI.VfpDataProvider.dll
 	EndProjectSection
@@ -120,6 +138,10 @@ Global
 		Debug|Default = Debug|Default
 		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

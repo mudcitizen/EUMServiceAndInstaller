@@ -1,2 +1,2 @@
-7z a D:\zipz\20171109EumService2 *.sln *.suo *.cs*  *.sql *.xsd *.config *.testsettings *.resx *.settings *.vdproj .git -r
+7z a D:\zipz\20171110EumService1 *.sln *.suo *.cs*  *.sql *.xsd *.config *.testsettings *.resx *.settings *.vdproj .git PSMS.Host.FileServerConnectionManager\Dlls -r
 
