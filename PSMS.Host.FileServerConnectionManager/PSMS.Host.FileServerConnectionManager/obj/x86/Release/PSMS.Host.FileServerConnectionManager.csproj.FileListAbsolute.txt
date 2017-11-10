@@ -18,8 +18,6 @@ D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\P
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\Microsoft.Practices.ServiceLocation.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\Microsoft.Practices.Unity.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\Microsoft.Practices.Unity.Interception.dll
-D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
-D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\PSMS.Host.WMI.LogicalDisks.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\PSMS.Host.WMI.OpenFiles.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\PSMS.Host.WMI.ServerConnections.dll

@@ -16,6 +16,5 @@ D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\P
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\x86\Debug\Microsoft.Practices.Unity.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\x86\Debug\Microsoft.Practices.Unity.Interception.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\x86\Debug\Microsoft.Data.ConnectionUI.pdb
-D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\obj\x86\Debug\PSMS.Host.FileServerConnectionManager.Config.csprojResolveAssemblyReference.cache
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\obj\x86\Debug\PSMS.Host.FileServerConnectionManager.Config.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\obj\x86\Debug\PSMS.Host.FileServerConnectionManager.Config.pdb
