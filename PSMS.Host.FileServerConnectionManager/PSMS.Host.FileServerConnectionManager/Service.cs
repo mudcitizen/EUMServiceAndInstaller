@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.ServiceProcess;
 using System.Threading;
-using System.Configuration;
 
 namespace PSMS.Host.FileServerConnectionManager
 {
