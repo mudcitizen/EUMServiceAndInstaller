@@ -14,7 +14,7 @@ d:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\P
 d:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\obj\x86\Release\PSMS.Host.FileServerConnectionManager.Config.dll
 d:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\obj\x86\Release\PSMS.Host.FileServerConnectionManager.Config.pdb
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\x86\Release\Microsoft.Data.ConnectionUI.Dialog.dll
-D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\x86\Release\Microsoft.Data.ConnectionUI.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\x86\Release\Sms.ConnectionUI.Client.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\x86\Release\Sms.ConnectionUI.VfpDataProvider.dll
-D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\x86\Release\Microsoft.Data.ConnectionUI.pdb
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\obj\x86\Release\PSMS.Host.FileServerConnectionManager.Config.csproj.CoreCompileInputs.cache
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager.Config\bin\x86\Release\Microsoft.Data.ConnectionUI.dll

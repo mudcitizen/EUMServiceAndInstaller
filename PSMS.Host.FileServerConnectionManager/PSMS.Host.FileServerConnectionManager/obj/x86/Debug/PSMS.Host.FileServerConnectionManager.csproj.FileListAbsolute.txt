@@ -24,3 +24,5 @@ D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\P
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Debug\Microsoft.Practices.Unity.Interception.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Debug\PSMS.Utility.Data.DbHandler.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\obj\x86\Debug\PSMS.Host.FileServerConnectionManager.csprojResolveAssemblyReference.cache
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\obj\x86\Debug\PSMS.Host.FileServerConnectionManager.csproj.CoreCompileInputs.cache

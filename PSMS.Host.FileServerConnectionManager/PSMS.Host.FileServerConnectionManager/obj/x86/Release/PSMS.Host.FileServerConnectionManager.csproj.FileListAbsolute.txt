@@ -23,5 +23,5 @@ D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\P
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\PSMS.Host.WMI.ServerConnections.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\PSMS.Host.WMI.ServerSessions.dll
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\PSMS.Host.WMI.Shares.dll
-D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\obj\x86\Release\PSMS.Host.FileServerConnectionManager.csprojResolveAssemblyReference.cache
 D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\bin\Release\PSMS.Host.WMI.TestConnection.dll
+D:\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\PSMS.Host.FileServerConnectionManager\obj\x86\Release\PSMS.Host.FileServerConnectionManager.csproj.CoreCompileInputs.cache
